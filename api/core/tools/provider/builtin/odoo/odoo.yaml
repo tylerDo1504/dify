@@ -1,0 +1,26 @@
+identity:
+  author: Gigarion
+  name: odoo
+  label:
+    en_US: Odoo
+    zh_Hans: Odoo
+    pt_BR: Odoo
+  description:
+    en_US: Interacting with the Odoo system for Gigarion
+    zh_Hans: 互动的Odoo系统，适用于Gigarion
+    pt_BR: Interagindo com o sistema Odoo para Gigarion
+  icon: icon.svg
+  tags:
+    - weather
+credentials_for_provider:
+  odoo_url:
+    type: text-input
+    label:
+      en_US: Odoo Url
+      zh_Hans: Odoo Url
+      pt_BR: Odoo Url
+    placeholder:
+      en_US: Please enter the Odoo URL for the provider
+      zh_Hans: 请输入提供者的Odoo URL
+      pt_BR: Por favor, insira a URL do Odoo para o provedor
+    required: true

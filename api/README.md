@@ -66,11 +66,11 @@
 9. Setup your application by visiting `http://localhost:3000`...
 10. If you need to debug local async processing, please start the worker service.
 
-   ```bash
-   poetry run python -m celery -A app.celery worker -P gevent -c 1 --loglevel INFO -Q dataset,generation,mail,ops_trace,app_deletion
-   ```
+```bash
+poetry run python -m celery -A app.celery worker -P gevent -c 1 --loglevel INFO -Q dataset,generation,mail,ops_trace,app_deletion
+```
 
-   The started celery app handles the async tasks, e.g. dataset importing and documents indexing.
+The started celery app handles the async tasks, e.g. dataset importing and documents indexing.
 
 ## Testing
 

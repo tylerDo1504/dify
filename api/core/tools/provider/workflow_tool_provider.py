@@ -96,6 +96,7 @@ class WorkflowToolProviderController(ToolProviderController):
                 if variable.type in [
                     VariableEntity.Type.TEXT_INPUT, 
                     VariableEntity.Type.PARAGRAPH, 
+                    VariableEntity.Type.SECRET_INPUT
                 ]:
                     parameter_type = ToolParameter.ToolParameterType.STRING
                 elif variable.type in [

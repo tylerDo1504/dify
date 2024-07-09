@@ -1,0 +1,40 @@
+identity:
+  name: get_time_off
+  author: Gigarion
+  label:
+    en_US: Get Time Off
+    zh_Hans: Get Time Off
+    pt_BR: Get Time Off
+description:
+  human:
+    en_US: Get time off for a user in the Odoo System. This tool allows users to quickly retrieve their time off information.
+    zh_Hans: 获取Odoo系统中用户的休假信息。该工具允许用户快速检索他们的休假信息。
+    pt_BR: Obtenha a folga do usuário no sistema Odoo. Esta ferramenta permite que os usuários recuperem rapidamente as informações de sua folga.
+  llm: Retrieve time off information for a user in the Odoo system.
+parameters:
+  - name: odooEmail
+    type: string
+    required: true
+    label:
+      en_US: Odoo Email
+      zh_Hans: Odoo Email
+      pt_BR: Odoo Email
+    human_description:
+      en_US: The email address of the user registered in the Odoo system.
+      zh_Hans: Odoo系统中注册用户的电子邮件地址。
+      pt_BR: O endereço de e-mail do usuário registrado no sistema Odoo.
+    llm_description: Email address of the user registered in the Odoo system.
+    form: llm
+  - name: odooPassword
+    type: string
+    required: true
+    label:
+      en_US: Odoo Password
+      zh_Hans: Odoo Password
+      pt_BR: Odoo Password
+    human_description:
+      en_US: The password for the user's account in the Odoo system.
+      zh_Hans: Odoo系统中用户帐户的密码。
+      pt_BR: A senha da conta do usuário no sistema Odoo.
+    llm_description: Password for the user's account in the Odoo system.
+    form: llm
